@@ -1,0 +1,311 @@
+/*Create new page*/
+.common-radio input[type="radio"] {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.img-50 {
+    width: 50px;
+    height: 50px;
+}
+
+.top-0 {
+    top: 0px;
+}
+
+/* User Custom Extra CSS Start */
+.timer-down-wrap {
+    width: 75px;
+}
+.highest-box-item i {
+    color: var(--red-color);
+    margin-right: 10px;
+    font-size: 19px;
+}
+.user-dashboard-page-card {
+    transition: all .5s ease-in-out;
+}
+.user-dashboard-page-card .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-dashboard-page-card:hover .user-dashboard-card-icon {
+    transform: scale(1.2);
+}
+.user-dashboard-card-icon {
+    font-size: 33px;
+    color: var(--heading-color);
+    transition: all .5s ease-in-out;
+}
+.user-dashboard-page-card .card-footer i {
+    font-size: 13px;
+}
+.user-dashboard-page-card:hover .card-footer {
+    color: var(--theme-color)!important;
+}
+
+/* Search Dropdown css */
+.searchbox {
+    overflow: visible;
+}
+.menu-search-result-dropdown-box {
+    border-radius: 12px;
+    padding: 25px 12px;
+    filter: drop-shadow(0 15px 16px rgba(0,0,0,.25));
+    background-color: #fff;
+    max-height: 340px;
+    overflow-y: auto;
+    min-height: 70px;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Custom scrollbar for search menu start */
+
+.scrollbar-2 {
+    scrollbar-width: thin;
+    scrollbar-color: #69B756 #fff;
+    border-radius: 12px!important;
+}
+.scrollbar-2::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 12px!important;
+    padding: 8px 0;
+}
+.scrollbar-2::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 12px!important;
+}
+.scrollbar-2::-webkit-scrollbar-thumb {
+    background-color: #69B756;
+    border-radius: 12px!important;
+}
+.scrollbar-2::-webkit-scrollbar-track, .scrollbar-2::-webkit-scrollbar-thumb {
+    border-radius: 12px!important;
+}
+
+/* Custom scrollbar for search menu end */
+
+.header-right-nav ul {
+    display: inherit;
+}
+.header-right-nav .header-right-menu-ul {
+    display: flex;
+}
+/* search reasult item */
+
+.menu-search-result-dropdown-box ul li {
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+.menu-search-result-dropdown-box ul li:last-child {
+    margin-bottom: 0;
+}
+.search-dropdown-img-wrap {
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.search-dropdown-img-wrap img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+/* search reasult item */
+
+/* Search Dropdown css */
+
+/* Frontend User Dashboard Inner Pages css Start */
+.dataTables_wrapper .table td, .dataTables_wrapper .table th {
+    vertical-align: middle!important;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+    top: 51%;
+    left: 8px;
+    height: .75em;
+    width: .75em;
+    display: flex;
+    background-color: #31b131;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.user-dashboard-table col.first-col {
+    min-width: 160px;
+}
+.user-dashboard-table col.third-col {
+    width: 131px;
+}
+table.dataTable {
+    border-collapse: collapse !important;
+}
+.user-dashboard-table .dropdown-menu {
+    min-width: 120px;
+    width: 150px;
+    padding: 10px 20px;
+}
+/* User My Wallet Page */
+.my-wallet-actions-btn button, .my-wallet-actions-btn a.btn {
+    height: 25px;
+    width: 25px;
+    margin: 0 3px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* User My Wallet Page */
+.sign-up-button-part button {
+    height: auto;
+}
+
+.modal-header .close {
+    background-color: #fff;
+}
+@media only screen and (min-width:300px) and (max-width:410px) {
+    .modal-header .close {
+        right: 20px;
+    }
+    .modal-title {
+        font-size: 22px!important;
+    }
+
+}
+/* Service create Page css */
+.create-new-page-box label.custom-radio img {
+    height: 21px;
+    margin-right: 6px;
+}
+/* Custom radio btn */
+.create-new-page-box .common-radio label {
+    -webkit-appearance: none;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.create-new-page-box .common-radio .label-text {
+    background-color: #fff;
+    border: 2px solid var(--border-color);
+    padding: 8px;
+    border-radius: 50px;
+    vertical-align: middle;
+    cursor: pointer;
+    padding-left: 10px;
+    margin-left: -5px;
+}
+.create-new-page-box .common-radio input {
+    display: none;
+    cursor: pointer;
+}
+.create-new-page-box .common-radio input:checked ~ .label-text {
+    color: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    background-color: #fff;
+    font-weight: 700;
+}
+.create-new-page-box .common-radio .form-group input:checked + label {
+	background-color: #e9ecee;
+  color: #99a1a7;
+  border: 1px solid #0079bf;
+}
+
+.create-new-page-box .common-radio .form-group input:checked ~ .label-text {
+	color: #0079bf;
+  font-weight: 700;
+}
+/* Service create Page css */
+
+/* User Profile Page css */
+.followers-avatar {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.followers-avatar img {
+    height: 85px;
+    width: auto;
+    min-width: 85px;
+}
+.followers-preview {
+    height: 121px;
+}
+.followers-preview img {
+    height: 121px;
+}
+/* User Profile Page css */
+
+/* News Page CSS Start */
+.news-page-top-part-left-items .news-list-item .box-bg-image, .news-details-area .news-details-content .box-bg-image {
+    height: 490px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+.news-page-top-part-right-items .news-list-item .box-bg-image {
+    height: 204px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+.news-list-item.news-item-small.hot-news-item .box-bg-image {
+    height: 195px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+.news-page-top-part-left-items .news-list-item .box-bg-image img, .news-page-top-part-right-items .news-list-item .box-bg-image img,
+.news-list-item.news-item-small.hot-news-item img,  .news-details-area .news-details-content .box-bg-image img {
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+}
+
+/* News hot Small images end*/
+.news-details-area .news-details-content .box-bg-image {
+    border-radius: 12px;
+    background-position: center left;
+}
+
+@media only screen and (min-width: 768.98px) and (max-width: 991.98px) {
+    .news-page-top-part-right-items .news-list-item .box-bg-image {
+        height: 178px;
+    }
+    .news-list-item.news-item-small.hot-news-item .box-bg-image {
+        height: 150px;
+    }
+    .news-list-item.news-item-small.hot-news-item .card-text p {
+        font-size: 14px;
+    }
+    .news-details-area .news-details-content .box-bg-image {
+        height: 390px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .news-page-top-part-left-items .news-list-item .box-bg-image, .news-page-top-part-right-items .news-list-item .box-bg-image, .news-list-item.news-item-small.hot-news-item .box-bg-image {
+        height: 280px;
+    }
+    .news-details-area .news-details-content .box-bg-image {
+        height: 390px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .news-details-area .news-details-content .box-bg-image {
+        height: 290px;
+    }
+}
+/* News hot Small images end */
+/* News Page CSS End */
+/* Frontend User Dashboard Inner Pages css End */
+
+/* User Custom Extra CSS End */

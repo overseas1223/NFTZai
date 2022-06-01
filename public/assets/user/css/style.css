@@ -1,0 +1,4000 @@
+/*
+-------------------------------------------------
+  Theme Name: Nftzai - NFT Marketplace HTML5 Responsive Template
+  Theme URL:
+  Author: zainiktheme
+  Author URL: https://themeforest.net/user/zainiktheme
+  Creation Date: 04-10-2021
+  Description:A default stylesheet for TechFolio - Crypzai - Crypto Currency HTML5 Responsive Template
+  Version: 1.00
+  Primary use: crypto currency, currency, crypto, nft marketplace, NFT, nft, NFT marketplace, crypto, currency, cryptocurrency, crypto currency,corporate, business, responsive, bootstrap, html5, clean, modern, creative etc.
+
+  ---------------------------------------------------
+  Developed By: zainiktheme
+  Developer URL: https://themeforest.net/user/zainiktheme
+  Developer: Suraiya Aysha
+
+  ---------------------------------------------------
+
+  --------------------------------------------------
+  Table of Contents
+  --------------------------------------------------
+  1. General CSS
+  2. Typography CSS
+  3. Button CSS
+  4. Navbar CSS
+  5.Scroll To Top Area
+  6.Preloader Area Start
+  7. Header Area
+  8. Top Famous NTFs Authors
+  9. Northern Light Carousel
+  10. Top Artists Area
+  11. Latest Collection Area
+  12. 12. Amazing traditional art-work Area
+  13. Explore More Area
+  14. Call to Action Area
+  15. Footer Area
+  16. Common Page Banner
+  17. news Page
+  18. News Details Page
+  19. Contact Page CSS
+  20. Sign Up Page
+  21. All Preview Inner Modal/ Place a bid/ purchase modals
+  22. Upload Page
+  23. Create New Page
+  24. Connect Wallet Page
+  25. How It Works / FAQ / faq Page
+  26. Search / Discover Page
+  27. Other User Profile Page
+  28. User Profile Page
+  29. Edit Profile Page
+  30. All Artist Page
+  31. Activities/ Notification Page
+  25. Responsive CSS
+
+------------------------------------------------ */
+
+
+/*-----------------------------------------------
+            1. General Style
+-------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #fff none repeat scroll;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--para-color);
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+a {
+    color: var(--heading-color);
+}
+a:hover {
+    color: var(--theme-color);
+}
+/* Theme All Transitions
+------------------------------- */
+a, #mainNav, .theme-button1, .theme-button2, button, .owl-carousel button.owl-dot, .widget-recent-posts ul li a p:hover, .explore-item .artist-overlay, .connect-wallet-name,
+.connect-wallet-name i, .explore-content h5, .user-profile-photo-part .custom-file-upload.theme-button2 label.custom-file-label, .artists-content h5, .follow-btn,
+.dropdown-item i, .main-item-drop-btn > i, .searchbox-open, .explore-item .artist-img img,
+.explore-item .artist-overlay .price-box-wrap, .all-artist-page-slider-item .all-artist-img-inner-img img,
+.all-artist-page-slider-item .all-artist-page-slider-item-content h5, .artist-item .artist-img img {
+    transition: all .5s ease-in-out;
+}
+
+.slow-transition, .theme-button, .reviews_slide_nav .testi_prev, .reviews_slide_nav .testi_next, .testi_prev, .testi_next, #scroll, .home-5 #mainNav .navbar-nav .nav-item .nav-link::before{
+    transition: all .7s ease-in-out;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--theme-color);
+}
+
+img::selection {
+    background: transparent;
+}
+.page-link:focus {
+    box-shadow: none;
+}
+
+/*----Form Control Reset CSS----*/
+
+.form-control {
+    background-color: #fff;
+    height: 49px;
+    color: var(--para-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+.form-control:focus {
+    background-color: #fff;
+    box-shadow: none;
+}
+.form-control::placeholder {
+    color: #a0a3aa;
+}
+
+/*------------------------------------------
+            2.  Typography
+-------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: var(--heading-color);
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--para-color);
+    line-height: 1.75;
+}
+
+figure {
+    margin: 0 0 0;
+}
+
+/*--------------------------------
+            2.1 Theme Color
+-----------------------------------*/
+:root{
+    --white-color: #fff;
+    --theme-color: #69B756;
+    --heading-color: #130052;
+    --red-color: #FF6A6A;
+    --para-color: #6F6C78;
+    --nutral-color: #777E90;
+    --nutral-color2: #E6E8EC;
+    --nutral-color3: #CFD5E1;
+    --nutral-color4: #A1A9B7;
+    --mid-gray: #666e81;
+    --border-color: #E6E8EC;
+    --theme-border-color: rgba(0, 0, 0, 0.08);
+    --font-dms: 'DM Sans', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+.color-heading{
+    color: var(--heading-color);
+}
+.bg-green {
+    background-color: var(--theme-color);
+}
+.color-green {
+    color: var(--theme-color);
+}
+.color-red {
+    color: var(--red-color);
+}
+.bg-red {
+    background-color: var(--red-color);
+}
+.theme-border {
+    border-color: var(--border-color);
+}
+.theme-font-color{
+    color: var(--para-color);
+}
+button.disabled {
+    background-color: var(--nutral-color4);
+    border-color:  var(--nutral-color4);
+}
+button.disabled:hover, button.disabled.theme-button1:hover , button.disabled.theme-button2:hover {
+    background-color: var(--nutral-color4);
+    border-color:  var(--nutral-color4);
+    color: #fff!important;
+}
+#mainItemPreviewModal button.disabled.theme-button2 {
+    color: #fff!important;
+}
+
+/*--------------------------------
+    2.3 Theme padding, margin
+-----------------------------------*/
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1150px;
+}
+section, .section-b-space {
+    padding-bottom: 120px;
+}
+.section-t-space {
+    padding-top: 120px;
+}
+.section-b-90-space {
+    padding-bottom: 90px;
+}
+.section-t-90-space {
+    padding-top: 90px;
+}
+.section-p-t-b-100 {
+    padding: 100px 0 100px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.radius-95 {
+    border-radius: 95px;
+}
+.radius-5 {
+    border-radius: 5px;
+}
+
+/*--------------------------------
+    2.3 Theme Font Family, Font Size
+-----------------------------------*/
+.font-dms {
+    font-family: var(--font-dms);
+}
+.font-poppins {
+    font-family: var(--font-poppins);
+}
+
+.font-normal {
+    font-weight: 400;
+}
+.font-bold {
+    font-weight: 700;
+}
+.font-semi-bold {
+    font-weight: 600;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-13{
+    font-size: 13px;
+}
+.font-12{
+    font-size: 12px;
+}
+
+/*--------------------------------
+   2.4 Template Default CSS
+-----------------------------------*/
+
+/*----Template Main Section ----*/
+section {
+    position: relative;
+    z-index: 9;
+}
+
+.section-heading {
+    font-size: 32px;
+    line-height: 32px;
+}
+.section-sub-heading {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--para-color);
+    width: 50%;
+    margin: 12px auto 45px;
+}
+.section-overlay{
+    height: 100%;
+    width: 100%;
+}
+.cursor {
+    cursor: pointer;
+}
+
+/*--------------------------------
+   2.5 Default Image Overlay CSS
+-----------------------------------*/
+
+/*------------------------------------------
+            2.  Typography
+-------------------------------------------*/
+
+/*--------------------------------------------
+            3. Button Style
+---------------------------------------------*/
+.btn{
+    padding: 0;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+button{
+    background-color: transparent;
+}
+button:focus {
+    outline: 0;
+}
+/*-----Theme Button Style-----*/
+.theme-button1 {
+    color: #fff !important;
+    background-color: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    display: inline-flex;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+    z-index: 99;
+    padding: 12.5px 37px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 95px;
+    justify-content: center;
+}
+.theme-button1:hover {
+    color: var(--heading-color) !important;
+    background-color: #fff;
+    border: 2px solid var(--border-color);
+}
+.theme-button2 {
+    color: var(--heading-color) !important;
+    background-color: transparent;
+    border: 2px solid var(--border-color);
+    display: inline-flex;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+    z-index: 99;
+    padding: 12.5px 37px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 95px;
+    justify-content: center;
+}
+.theme-button2:hover {
+    color: #fff !important;
+    background-color: var(--theme-color);
+    border: 2px solid var(--theme-color);
+}
+/*-------------------------------------------
+           4. Navbar Area CSS
+-------------------------------------------*/
+.menu-section-area {
+    padding: 0;
+    z-index: 999;
+}
+@media only screen and (min-width: 992px) {
+    .menu-section-area, #mainNav {
+        display: block;
+    }
+    .mobile-header, #mobile-menu-offcanvas {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .menu-section-area, #mainNav {
+        display: none;
+    }
+    .mobile-header, #mobile-menu-offcanvas {
+        display: block;
+    }
+}
+
+.menu-section-area .navbar {
+    padding: 0;
+}
+
+#mainNav {
+    height: 100px;
+    display: flex !important;
+    transition: all ease .6s;
+    background: #fff;
+    padding: 42px;
+    align-items: center;
+}
+#mainNav.navbar-shrink {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#mainNav .navbar-brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    padding: 0.75em 15px;
+    letter-spacing: 1px;
+    position: relative;
+    color: var(--nutral-color);
+    font-weight: 500;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link.active{
+    color: var(--theme-color);
+}
+
+/*---- Dropdown Menu CSS ----*/
+.dropdown-toggle::after {
+    display: none;
+}
+#mainNav .navbar-nav ul.dropdown-menu li {
+    background-color: #2c303a;
+}
+#mainNav .navbar-nav .dropdown-menu a {
+    color: var(--para-color);
+    padding: 8px 10px 8px 12px;
+    border-top: 1px solid #343c50;
+    display: flex;
+}
+#mainNav .navbar-nav .dropdown-menu a:hover {
+    color: var(--heading-color);
+}
+
+/* Header Right Navbar Right Side */
+.header-right-nav ul {
+    display: flex;
+}
+.header-right-nav li {
+    margin-left: 10px;
+    position: relative;
+}
+button.menu-round-btn {
+    height: 45px;
+    width: 45px;
+    border: 2px solid var(--border-color);
+    color: var(--heading-color);
+    border-radius: 50%;
+}
+.menu-round-btn:hover {
+    background-color: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    color: #fff;
+}
+.has-notification {
+    height: 10px;
+    width: 10px;
+    background-color: var(--theme-color);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+.header-right-nav .theme-button1, .header-right-nav .theme-button2 {
+    padding: 10px 22px;
+}
+
+/* Onclick open searchbar  */
+.searchbox {
+    position:relative;
+    overflow:hidden;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+.searchbox-input {
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    font-size: 15px;
+    position: relative;
+    border-radius: 25px;
+    padding: 10px 44px 10px 10px;
+    opacity: 0;
+}
+
+.searchbox-icon, .searchbox-submit {
+    height: 45px;
+    width: 45px;
+    color: var(--heading-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbox-submit i {
+    opacity: 0;
+}
+.searchbox-open .searchbox-input {
+    width:100%;
+    opacity: 1;
+    border: 2px solid var(--border-color);
+}
+/* Onclick open searchbar  */
+
+/* isLoginMenu CSS Start */
+.nav-notification {
+    display: none;
+}
+.isLoginMenu .nav-wallet {
+    display: none;
+}
+.isLoginMenu .nav-notification {
+    display: block;
+}
+/* User Nav Part */
+.mobile-right-side .dropdown-menu {
+    top: 13px!important;
+}
+.navbar-user-img-wrap {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.navbar-user-name {
+    margin-left: 15px;
+}
+.navbar-user-img-wrap img {
+    height: 45px;
+    width: 100%;
+    border-radius: 50%;
+}
+.user-verified-badge {
+    background-color: #018DF0;
+    color: #fff;
+    font-size: 7px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+}
+.user-code {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-dms);
+    color: var(--nutral-color);
+    margin-top: 8px;
+}
+.user-dropdown-nav-wallet {
+    margin: 20px 0;
+}
+
+/* Connect Wallet inside usernav Dropdown */
+.wallet-connected-after-login {
+    border: 1px solid #F4F4F5;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.wallet-connected-after-login i {
+    background-color: #627EEA;
+    margin-right: 15px;
+    font-size: 23px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* Dropdown Notification Part CSS */
+.notification-item {
+    position: relative;
+    border-radius: 5px;
+    padding: 10px 12px!important;
+}
+.notification-item:hover {
+    background-color: #F0F8EE!important;
+}
+.notification-img {
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
+}
+.notification-img img {
+    height: 60px;
+    width: auto;
+}
+.unread:after {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 7px;
+    background-color: var(--theme-color);
+    right: 7px;
+    border-radius: 50%;
+}
+.see-all-notification {
+    color: var(--heading-color)!important;
+    font-size: 13px!important;
+}
+
+/* isLoginMenu CSS End */
+
+/*****************************
+* Layout - Header Mobile
+*****************************/
+
+.offcanvas-rightside {
+    right: 0%;
+    transform: translateX(100%);
+}
+.offcanvas-mobile-menu-section {
+    background: #fff !important;
+}
+.offcanvas.offcanvas-open {
+    transform: translateX(0);
+}
+
+/* ------------ */
+.mobile-menu-logo li {
+    margin-right: 15px;
+}
+
+.mobile-menu-logo li:last-child {
+    margin-right: 0;
+}
+
+.mobile-menu-logo {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu-logo .logo {
+    width: auto;
+    overflow: hidden;
+}
+
+.mobile-menu-logo .logo img {
+    width: auto;
+    height: 20px;
+}
+
+.mobile-header {
+    padding: 15px 0;
+}
+.mobile-right-side ul li {
+    margin-left: 15px;
+    position: relative;
+}
+
+.offside-menu {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: normal !important;
+    display: block;
+    border-radius: 50%;
+    background: rgba(242, 232, 231, 0.5);
+    color: var(--theme-color);
+}
+
+.offside-menu-color--black {
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/*****************************
+* Layout - Offcanvas
+*****************************/
+
+.offcanvas {
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+    height: 100vh;
+    padding: 20px;
+    transition: all 0.5s ease;
+    transform: translateX(100%);
+    box-shadow: none;
+    background: #FFF;
+    /* width: 300px; */
+    width: 400px;
+    overflow-x: hidden;
+}
+
+@media (max-width: 576px) {
+    .offcanvas {
+        width: 310px;
+    }
+}
+
+.offcanvas-leftside {
+    left: 0%;
+    transform: translateX(-100%);
+}
+
+.offcanvas-rightside {
+    right: 0%;
+    transform: translateX(100%);
+}
+
+.offcanvas.offcanvas-open {
+    transform: translateX(0);
+}
+
+.offcanvas-overlay {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.offcanvas-header {
+    margin-bottom: 30px;
+}
+
+.offcanvas-close {
+    width: 15px;
+    height: 15px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.offcanvas-title {
+    margin-bottom: 40px;
+}
+
+.offcanvas-mobile-menu-section {
+    background: #fff !important;
+}
+
+.offcanvas-mobile-menu-section .offcanvas-close,
+.offcanvas-mobile-about-section .offcanvas-close {
+    color: #FFF;
+}
+
+/*Mobile Menu Bottom Area*/
+
+.offcanvas-menu {
+    margin: 20px 0;
+}
+
+.offcanvas-menu li {
+    position: relative;
+    padding: 7px 5px;
+}
+
+.offcanvas-menu>ul>li {
+    border-bottom: 1px solid transparent;
+}
+
+.offcanvas-menu>ul>li:last-child {
+    border-bottom: none;
+}
+.offcanvas-menu li a {
+    font-size: 15px;
+    padding: 0.75em 15px;
+    letter-spacing: 1px;
+    position: relative;
+    color: var(--nutral-color);
+    font-weight: 500;
+}
+.offcanvas-menu li a.active{
+    color: var(--theme-color);
+}
+.offcanvas-menu li a:hover {
+    color: var(--theme-color);
+}
+
+.offcanvas-menu li .mobile-sub-menu {
+    display: none;
+}
+
+.offcanvas-menu-expand::after {
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease;
+    color: #FFF;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0dd";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
+.offcanvas-menu .active>.offcanvas-menu-expand:last-child,
+.sub-menu>.active .offcanvas-menu-expand:last-child {
+    border-bottom: none;
+}
+
+.offcanvas-menu .active>.offcanvas-menu-expand::after,
+.sub-menu>.active .offcanvas-menu-expand::after {
+    color: var(--main-theme-color);
+    transform: rotate(90deg);
+}
+
+/* Offcanvas Mobile Menu Extra Info wrap CSS */
+
+.mobile-search input {
+    height: 45px;
+    border: 2px solid var(--border-color);
+    border-radius: 95px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+.mobile-search-btn {
+    position: absolute;
+    right: 0;
+}
+.offcanvas-mobile-menu-wrapper .header-right-nav li {
+    margin-left: 7px;
+    margin-bottom: 20px;
+}
+
+/*-------------------------------------------
+            5. Scroll To Top Area
+-------------------------------------------*/
+#scroll {
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: none;
+    z-index: 10;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 48px;
+}
+/*-------------------------------------------
+            5. Scroll To Top Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+            6. Preloader Area Start
+-------------------------------------------*/
+#preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99999999;
+    width: 100%;
+    height: 100%;
+}
+#status {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-image: url('../img/preloader.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------------------------
+            6. Preloader Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+            7. Header Area
+-------------------------------------------*/
+.hero-area {
+    background-image: url('../img/home-page/hero-area/hero-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 664px;
+    align-items: center;
+    display: flex;
+}
+.hero-heading {
+    font-size: 65px;
+    line-height: 78px;
+    padding: 28px 0 34px;
+}
+.hero-btns a {
+    margin: 0 6px;
+}
+img.hero-star-img {
+    margin-bottom: 28px;
+}
+#down-arrow {
+    margin: 0;
+    position: absolute;
+    top: 92%;
+    left: 48%;
+    animation-name: upDown;
+    animation-iteration-count: infinite;
+    animation-duration: 800ms;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    height: 65px;
+    width: 65px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 99;
+    filter: drop-shadow(0px 6px 12px rgba(10, 4, 60, 0.1));
+    flex-direction: column;
+}
+#down-arrow img {
+    height: 30px;
+}
+@keyframes upDown {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 20px;
+    }
+
+}
+@keyframes slideIn {
+    0%   {top: 50%; left: 70%; letter-spacing: 5px;}
+    50%  {top: 50%; left: 40%; letter-spacing: 2px;}
+    100% {top: 50%; left: 50%; letter-spacing: 0px;}
+}
+
+/* Hero Area Text Effect Start */
+.shimmer {
+    position: relative;
+}
+.shimmer {
+    text-align: center;
+    color: rgba(255,255,255,0.1);
+    background: -webkit-gradient(linear, left top, right top, from(#69B756), to(#130052), color-stop(0.5, #fff));
+    background: -moz-gradient(linear, left top, right top, from(#69B756), to(#130052), color-stop(0.5, #fff));
+    /* background: gradient(linear, left top, right top, from(#69B756), to(#130052), color-stop(0.5, #fff)); */
+    -webkit-background-size: 125px 100%;
+    -moz-background-size: 125px 100%;
+    background-size: 125px 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-animation-name: shimmer;
+    -moz-animation-name: shimmer;
+    animation-name: shimmer;
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #130052;
+}
+@-moz-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+@-o-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+@keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+
+/* Hero Area Text Effect End */
+
+/* Net Effect */
+.hero-net-img-1.box {
+    left: 20%;
+    top: 108px;
+}
+
+.hero-net-img-2.box {
+    right: 0;
+    top: 0;
+}
+
+/* Hero Dot Effect */
+.hero-dot1 {
+    top: 9%;
+    left: 4%;
+}
+.hero-dot2{
+    right: 90px;
+    bottom: 68px;
+}
+/* Hero Dot Effect */
+
+/* Hero Area Line Shape */
+.hero-line-shape {
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    width: auto;
+}
+/* Hero Area Line Shape */
+
+
+/*-------------------------------------------
+            7. Header Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    8. Top Famous NTFs Authors Area Start
+-------------------------------------------*/
+.collaborate-to-make-wrap {
+    margin-top: -160px;
+}
+.top-famous-nft-authors-area .section-title {
+    left: 0;
+    right: 0;
+    width: 59%;
+    margin: 0 auto;
+}
+.top-famous-nft-authors-area .section-sub-heading {
+    width: 100%;
+}
+.top-famous-nft-authors-area .collaborate-logos-left .flutter-icon {
+    left: 224px;
+    top: 310px;
+    -webkit-filter: drop-shadow(12px 34px 22px rgba(49, 89, 211, 0.12));
+    filter: drop-shadow(12px 34px 22px rgba(49, 89, 211, 0.12));
+    height: 83px;
+    width: 83px;
+}
+
+.top-famous-nft-authors-area .collaborate-logos-left .xd-icon {
+    left: 250px;
+    bottom: 120px;
+    height: 49px;
+    height: 50px;
+}
+.top-famous-nft-authors-area .collaborate-logos-right .html-icon {
+    right: 260px;
+    bottom: 75px;
+    height: 87px;
+    width: 88px;
+}
+.top-famous-nft-authors-area .collaborate-logos-left .react-icon {
+    left: 80px;
+    top: 165px;
+    -webkit-filter: drop-shadow(12px 34px 22px rgba(49, 89, 211, 0.12));
+    filter: drop-shadow(12px 34px 22px rgba(49, 89, 211, 0.12));
+    height: 79px;
+    width: 79px;
+}
+.top-famous-nft-authors-area .collaborate-logos-right .js-icon {
+    right: 80px;
+    top: 165px;
+    -webkit-filter: drop-shadow(12px 34px 22px rgba(49, 89, 211, 0.12));
+    filter: drop-shadow(12px 34px 22px rgba(49, 89, 211, 0.12));
+    height: 104px;
+    width: 106px;
+}
+.top-famous-nft-authors-area .collaborate-logos-left .figma-icon {
+    left: -20px;
+    bottom: 90px;
+    -webkit-filter: drop-shadow(0px 33px 59px rgba(49, 89, 211, 0.12));
+    filter: drop-shadow(0px 33px 59px rgba(49, 89, 211, 0.12));
+    height: 168px;
+    width: 169px;
+}
+.top-famous-nft-authors-area .collaborate-logos-right .vue-icon {
+    right: -20px;
+    bottom: 90px;
+    height: 182px;
+    width: 180px;
+}
+.collaborate-logos-left img , .collaborate-logos-right img{
+    border-radius: 50%;
+}
+
+.top-famous-nft-authors-area .main-img-wrap .main-logo {
+    box-shadow: 0px 20px 37px 0px rgb(49 89 211 / 19%);
+    padding: 30px;
+    border-radius: 58px;
+    width: 200px;
+    height: 103px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-famous-nft-authors-area img.dot1 {
+    left: 37%;
+    bottom: 31%;
+}
+.top-famous-nft-authors-area img.dot2 {
+    left: 17%;
+    top: 38%;
+}
+.top-famous-nft-authors-area img.dot3 {
+    top: 143px;
+}
+
+.top-famous-nft-authors-area img.dot4 {
+    top: 31px;
+}
+
+.top-famous-nft-authors-area img.dot5 {
+    top: 46%;
+    right: 40%;
+}
+.top-famous-nft-authors-area img.dot6 {
+    top: 72%;
+    right: 27%;
+}
+.border_rotate {
+    -webkit-animation: rotation 40s infinite linear;
+    animation: rotation 40s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.floating_animation {
+    -webkit-animation-name: floating;
+    animation-name: floating;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes floating {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 8px);
+        transform: translate(0, 8px);
+    }
+}
+
+@keyframes floating {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    50% {
+        -webkit-transform: translate(0, 8px);
+        transform: translate(0, 8px);
+    }
+}
+
+.floating_animation2 {
+    -webkit-animation-name: floating2;
+    animation-name: floating2;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes floating2 {
+    0% {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+    }
+    50% {
+        -webkit-transform: translate(8px, 0px);
+        transform: translate(8px, 0px);
+    }
+}
+
+@keyframes floating2 {
+    0% {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+    }
+    50% {
+        -webkit-transform: translate(8px, 0px);
+        transform: translate(8px, 0px);
+    }
+}
+
+.floating_animation3 {
+    -webkit-animation-name: floating3;
+    animation-name: floating3;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@-webkit-keyframes floating3 {
+    from {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+    }
+    65% {
+        -webkit-transform: translate(0, 15px);
+        transform: translate(0, 15px);
+    }
+    to {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+    }
+}
+
+@keyframes floating3 {
+    from {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+    }
+    65% {
+        -webkit-transform: translate(0, 15px);
+        transform: translate(0, 15px);
+    }
+    to {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+    }
+}
+
+/*-------------------------------------------
+    8. Top Famous NTFs Authors Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    9. Northern Light Carousel Area Start
+-------------------------------------------*/
+
+/* Main Item */
+
+/* Main Item Content Part Start */
+.main-item-content-part {
+    padding-right: 67px;
+    word-break: break-all;
+}
+.main-item-author img {
+    height: 24px;
+    width: 24px!important;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.highest-box-item img {
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 32px!important;
+}
+.main-item-author-name {
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-left: 10px;
+}
+.main-item-author {
+    margin: 8px 0 0;
+}
+.main-item-content-part .section-sub-heading {
+    width: 100%;
+    margin: 11px 0 15px 0;
+    line-height: 24px;
+    color: var(--nutral-color);
+}
+.bid-price-box h2 {
+    font-size: 32px;
+}
+.highest-box-text p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mid-gray);
+}
+.bid-small-price {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--nutral-color4);
+}
+.highest-bid-box {
+    border-radius: 16px;
+    border: 1px solid #E6E8EC;
+    padding: 25px 26px;
+    margin: 30px 0;
+}
+.main-item-box-condition {
+    font-size: 14px;
+    color: #9C99AE;
+    margin-top: 25px;
+}
+/* Main Item Content Part End */
+
+/* Main Item upper box start */
+.main-item-upper-left span {
+    padding: 12px 18px;
+    background-color: #00C271;
+    color: #fff;
+}
+.main-item-upper-left span:first-child {
+    background-color: #EF466F;
+}
+.main-item-upper-box {
+    padding: 30px;
+}
+.main-item-upper-right {
+    background-color: #fff;
+    border-radius: 60px;
+    padding: 10px;
+    height: 55px;
+    width: 190px;
+}
+.main-item-drop-btn {
+    height: 42px;
+    width: 42px;
+    color: var(--nutral-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-item-drop-btn:hover > i {
+    color: var(--theme-color);
+}
+.main-item-drop-btn button {
+    color: var(--nutral-color);
+}
+.main-item-drop-btn.show {
+    background-color: var(--theme-color);
+}
+.main-item-drop-btn.show .dropdown-toggle {
+    color: #fff;
+}
+.dropdown-menu {
+    border-radius: 12px;
+    padding: 18px 30px;
+    min-width: 265px;
+    width: 300px;
+    filter: drop-shadow(0 15px 16px rgba(0,0,0,.25));
+    border: none;
+}
+/*.dropdown-menu {*/
+/*    border-radius: 12px;*/
+/*    padding: 18px 30px;*/
+/*    min-width: 265px;*/
+/*    width: 300px;*/
+/*    top: 75px!important;*/
+/*    filter: drop-shadow(0 15px 16px rgba(0,0,0,.25));*/
+/*    border: none;*/
+/*}*/
+.main-item-drop-btn .dropdown-menu {
+    width: 265px;
+    left: 23px!important;
+    top: 24px!important;
+}
+.dropdown-item {
+    padding: 6px 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--nutral-color);
+    white-space: inherit;
+}
+.dropdown-item i {
+    color: #7E8592;
+    background-color: #E4E9F3;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--theme-color);
+    text-decoration: none;
+    background-color: transparent;
+}
+.dropdown-item:hover i {
+    color: #fff;
+    background-color: var(--theme-color);
+}
+
+/* Favourite btn css */
+.main-item-drop-btn.favourite-btn.active i {
+    color: var(--red-color);
+}
+
+/* Main Item upper box end */
+
+/* Time Counter css start */
+.countdown-box {
+    bottom: 30px;
+    background-color: #fff;
+    border-radius: 55px;
+    width: 347px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.time-remaining {
+    color: #fff;
+    position: absolute;
+    top: -31px;
+    padding: 10px 43px;
+    font-weight: 700;
+    border-radius: 55px;
+    display: flex;
+}
+.countdown {
+    display: -ms-flexbox;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    -ms-flex-pack: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.timer-down-wrap {
+    border-right: 1px solid rgba(151, 151, 151, 0.15);
+    padding: 0 10px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.countdown .timer-down-wrap:last-child {
+    border-right: 0;
+}
+.countdown .timer-down-wrap span:first-child {
+    font-size: 32px;
+    font-weight: 500;
+    display: -ms-flexbox;
+    line-height: 1;
+    color: var(--heading-color);
+}
+.timing-title {
+    color: var(--nutral-color);
+    font-weight: 500;
+}
+
+/* Carousel navigation  */
+.main-items-carousel .owl-carousel .owl-nav {
+    display: block;
+}
+.main-items-carousel .owl-carousel .owl-nav {
+    display: block;
+    text-align: left;
+    position: absolute;
+    margin-top: -54px;
+}
+.main-items-carousel .owl-carousel .owl-nav .owl-prev {
+    margin-left: 0!important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: var(--theme-color)!important;
+    color: #FFF;
+    border-color: var(--theme-color)!important;
+}
+
+/*-------------------------------------------
+    9. Northern Light Carousel Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+     10. Top Artists Area Start
+-------------------------------------------*/
+.top-artists-area {
+    background-image: url('../img/home-page/to-artist-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Tab navlist css */
+.artists-nav-wrap{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+.artists-nav-wrap .nav-tabs.tab-nav-list li {
+    margin-right: 5px;
+}
+.artists-nav-wrap .tab-nav-list.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--nutral-color);
+    padding: 12px 22px;
+    border-radius: 76px;
+    text-transform: capitalize;
+}
+.artists-nav-wrap .nav-tabs .nav-item.show .nav-link, .artists-nav-wrap .nav-tabs .nav-link.active {
+    color: #fff!important;
+    background-color: #353945;
+}
+/* Tab navlist css */
+
+/* Artist Item  */
+.top-artist-warp .artist-item:first-child {
+    padding-left: 0;
+}
+.top-artist-warp .artist-item:last-child {
+    padding-right: 0;
+}
+.artist-item {
+    margin-bottom: 30px;
+}
+.artist-item:hover .artists-content h5 {
+    color: var(--theme-color);
+}
+.artist-img {
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.top-artists-area .artist-img img, .list-of-artist-area .artist-img img {
+    width: 100%;
+}
+.artist-img img {
+    max-width: 100%;
+    width: auto;
+    border-radius: 5px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Artist Content  */
+.artists-content h5 {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+}
+.artists-content h5:hover {
+    color: var(--theme-color);
+}
+.follow-wrap {
+    margin-top: 18px;
+}
+.follow-btn {
+    border: 1px solid var(--red-color);
+    background-color: rgba(255, 106, 106, 0.2);
+    text-align: center;
+    border-radius: 32px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--red-color);;
+    padding: 5px 9px;
+}
+.follow-btn:hover {
+    background-color: rgba(255, 106, 106, 0.3);
+}
+
+/*-------------------------------------------
+     10. Top Artists Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    11. Latest Collection Area Start
+-------------------------------------------*/
+
+/* Dot Effect Start */
+.latest-c-dot1{
+    top: 108px;
+    left: 297px;
+}
+.latest-c-dot2 {
+    right: 208px;
+    bottom: 66px;
+}
+/* Dot Effect End */
+
+.latest-collection-item {
+    margin-bottom: 30px;
+}
+.latest-collection-item:hover .collection-item-content h5 a {
+    color: var(--theme-color);
+}
+.collection-item-content h5 {
+    font-size: 24px;
+    padding: 24px 0;
+}
+.latest-collection-item-img img {
+    border-radius: 5px;
+}
+.collection-item-bottom-box {
+    display: flex;
+}
+.collection-authors {
+    margin-right: 10px;
+}
+.c-item-num-btn {
+    font-weight: 500;
+    border: 2px solid #E6E8EC;
+    padding: 4px 7px;
+    font-size: 12px;
+    border-radius: 3px;
+    color: var(--nutral-color);
+}
+.collection-authors img {
+    height: 20px;
+    width: 20px!important;
+    padding: 1px;
+    border-radius: 50%;
+}
+.c-artist-count {
+    border-radius: 50%;
+    background-color: var(--theme-color);
+    min-height: 20px;
+    min-width: 20px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Collection carousel nav */
+.latest-collection-items, .trending-now-items, .all-artist-page-items {
+    position: relative;
+}
+
+.latest-collection-items button.owl-prev, .trending-now-items  button.owl-prev, .all-artist-page-items  button.owl-prev {
+    position: absolute;
+    left: -75px;
+}
+
+.latest-collection-items button.owl-next, .trending-now-items button.owl-next, .all-artist-page-items button.owl-next {
+    position: absolute;
+    right: -75px;
+}
+
+.latest-collection-items .owl-nav button, .main-items .owl-nav button, .trending-now-items .owl-nav button, .all-artist-page-items .owl-nav button {
+    background: #fff!important;
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--nutral-color3)!important;
+    border-radius: 50%!important;
+    top: 26%;
+}
+
+/*-------------------------------------------
+    11. Latest Collection Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    12. Amazing traditional art-work Area Start
+-------------------------------------------*/
+.amazing-traditional-artwork-area {
+    background-image: url('../img/home-page/amazing-traditional-img/artwork-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.amazing-traditional-artwork-area .row {
+    height: 100%;
+    align-items: center;
+    margin-bottom: 41px;
+}
+/* Counter part */
+
+.amazing-artwork-left {
+    padding-right: 0;
+}
+.amazing-artwork-left .section-heading {
+    font-size: 43px;
+    line-height: 51px;
+}
+.counter-area {
+    display: flex;
+    margin-top: 40px;
+    border-top: 1px solid #CCCCCC;
+    padding-top: 35px;
+}
+.counter-box {
+    margin-right: 40px;
+    min-width: 75px;
+}
+.counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.amazing-artwork-shape {
+    right: -47px;
+    top: 10px;
+    z-index: -1;
+}
+
+/* Counter part */
+
+.amazing-artwork-right {
+    height: 100%;
+    width: auto;
+}
+.big-img {
+    text-align: right;
+    float: right;
+}
+.big-img-1 {
+    position: absolute;
+    left: 0;
+    top: -26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.explore-circle-logo {
+    margin-bottom: 30px;
+    height: 105px;
+    width: 105px;
+}
+.amazing-yellow-ball {
+    bottom: 30px;
+    right: 20%;
+}
+/*-------------------------------------------
+    12. Amazing traditional art-work Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    13. Explore More Area Start
+-------------------------------------------*/
+.explore-more-area{
+    margin-bottom: -20px;
+}
+.explore-more-filter-wrap select.form-control {
+    border-radius: 76px;
+    border: 2px solid #E6E8EC;
+}
+.explore-radius-shape {
+    top: -105px;
+    left: 0;
+}
+
+/* Explore Item */
+.explore-item {
+    margin-bottom: 30px;
+}
+.explore-item .price-btn {
+    font-size: 12px;
+    color: #fff;
+    border-radius: 32px;
+    padding: 10px 12px;
+}
+.explore-item:hover .artist-overlay {
+    background-color: rgba(35, 38, 47, 0.2);
+}
+.explore-item:hover .artist-img img, .artist-item:hover .artist-img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.explore-item:hover .artist-overlay .place-a-bid-btn, .explore-item:hover .artist-overlay .price-box-wrap {
+    opacity: 1;
+}
+/* Explore overlay */
+.price-box-wrap {
+    top: 0;
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    opacity: 0;
+}
+
+.artist-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.add-like {
+    height: 30px;
+    width: 30px;
+    font-size: 11px;
+    border-radius: 50%;
+    color: #00C271;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.place-a-bid-btn {
+    padding: 10px 27px;
+    background-color: var(--theme-color);
+    border-radius: 32px;
+    color: #fff;
+    position: relative;
+    opacity: 0;
+}
+.place-a-bid-btn:hover {
+    color: var(--theme-color);
+    background-color: #fff;
+}
+.explore-content {
+    padding-top: 20px;
+}
+.explore-content h5 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+.explore-content h5:hover {
+    color: var(--theme-color);
+}
+.explore-author p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mid-gray);
+}
+.explore-author p span {
+    font-size: 13px;
+    color: var(--heading-color);
+    font-weight: 700;
+}
+.like-box, .explore-small-box p > span {
+    color: var(--heading-color);
+    font-weight: 700;
+}
+.like-box{
+    font-size: 14px;
+}
+.like-box i {
+    color: #FF72D2;
+}
+.explore-author-wrap {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+}
+.explore-author img {
+    width: 20px!important;
+    height: 20px!important;
+    height: auto;
+    border-radius: 50%;
+}
+.explore-small-box p {
+    font-size: 12px;
+}
+.explore-small-box p > span {
+    margin-left: 2px;
+}
+.top-artist-stock-qty {
+    font-size: 14px!important;
+}
+
+/* Explore Item */
+
+/*-------------------------------------------
+    13. Explore More Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    14. Call to Action Area Start
+-------------------------------------------*/
+.call-to-action-area .container-fluid {
+    padding: 0 153px;
+}
+.call-to-action-content {
+    background-image: url('../img/home-page/call-to-action-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    border-radius: 20px;
+}
+.call-to-action-content h2 {
+    font-size: 55px;
+    line-height: 66px;
+    font-weight: 600;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.call-to-action-content p {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 30px 0;
+}
+/*-------------------------------------------
+    14. Call to Action Area End
+-------------------------------------------*/
+
+/*-------------------------------------------
+    15. Footer Area Start
+-------------------------------------------*/
+.footer-area {
+    background-image: url('../img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid var(--theme-border-color);
+}
+
+/* Footer element */
+.footer-rect-shape {
+    left: 128px;
+    top: -46px;
+}
+.footer-dot1 {
+    top: 20%;
+    left: 5%;
+}
+.footer-dot2 {
+    bottom: 25%;
+    left: 44%;
+}
+.footer-dot3 {
+    right: 3%;
+    bottom: 58%;
+}
+
+/* Footer Widget */
+.footer-about img, .footer-widget > h6 {
+    margin-bottom: 30px;
+}
+.footer-widget.footer-about p {
+    font-size: 22px;
+    line-height: 32px;
+    color: #130052;
+    width: 80%;
+}
+.footer-links ul:first-child {
+    margin-right: 50px;
+}
+.footer-links li a, .footer-links li button {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    color: var(--mid-gray);
+    padding-bottom: 20px;
+    display: flex;
+}
+.footer-links li a:hover, .footer-links li button:hover {
+    color: var(--theme-color);
+}
+.footer-widget.footer-newsletter p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--para-color);
+    margin-bottom: 30px;
+}
+.footer-widget.footer-newsletter form input, .section-banner-search form input {
+    padding: 13px 26px;
+    font-size: 14px;
+    line-height: 31px;
+    border-radius: 60px;
+    border: 2px solid #E6E8EC;
+}
+.footer-widget.footer-newsletter form button, .section-banner-search form button {
+    background-color: var(--theme-color);
+    border: var(--theme-color);
+    color: #fff;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    right: 11px;
+    top: 9px;
+}
+.copyright-wrapper {
+    padding: 24px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    color: var(--nutral-color);
+}
+/*-------------------------------------------
+    15. Footer Area End
+-------------------------------------------*/
+
+/*--------------------------------------------
+    16. Common Page Banner CSS Start
+---------------------------------------------*/
+.page-banner-area {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.page-banner-content {
+    width: 77%;
+    margin: 0 auto;
+    padding: 70px 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 232px;
+}
+.page-banner-para {
+    font-size: 16px;
+    line-height: 26px;
+    width: 60%;
+    margin: 13px auto 0;
+    color: var(--mid-gray);
+}
+
+.page-banner-title {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.breadcrumb-area {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: -20px;
+}
+.breadcrumb {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #E6E8EC;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 0;
+}
+.breadcrumb-item {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 13px;
+    color: var(--nutral-color4);
+    text-transform: capitalize;
+}
+
+.breadcrumb-item a {
+    color: #B6B4BA;
+}
+
+.breadcrumb-item.active {
+    color: var(--heading-color);
+    font-weight: 500!important;
+}
+
+.inner-page-single-dot1 {
+    top: 11%;
+    left: 15%;
+}
+.inner-page-single-dot2 {
+    right: 29%;
+    bottom: 27%;
+    z-index: -1;
+}
+.inner-page-single-dot3 {
+    right: 10%;
+    top: 39%;
+}
+.inner-page-single-dot3 img {
+    height: 23px;
+}
+
+/*--------------------------------------------
+    16. Common Page Banner CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    17. news Page CSS Start
+---------------------------------------------*/
+.news-list-area {
+    padding-bottom: 60px;
+}
+.hot-news-item-list {
+    padding-right: 75px;
+}
+.news-item {
+    border: 1px solid #EAEAEA;
+    border-radius: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #fff;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.news-item:hover {
+    border-color: rgba(223, 223, 223, 0.7);
+}
+.news-item .card-body {
+    padding: 40px 30px 40px;
+}
+.news-item p.card-text {
+    line-height: 26px;
+    font-size: 15px;
+}
+.news-publish-date {
+    font-size: 12px;
+    font-weight: 700;
+}
+.news-title {
+    font-size: 34px;
+    margin: 13px 0 8px;
+    line-height: 41px;
+}
+
+.news-title a, .news-read-more {
+    color: var(--heading-color);
+}
+
+.news-title a:hover, .news-read-more:hover {
+    color: var(--theme-color);
+}
+
+/* news Item Small */
+.news-list-item.news-item-small .news-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 5px 0 15px;
+    font-weight: 500;
+}
+.news-list-item.news-item-small .news-item .card-body {
+    padding: 18px 1em 18px;
+}
+
+/* Hot News List Area  */
+.hot-news-area .section-heading {
+    font-size: 43px;
+    margin-bottom: 43px;
+    line-height: 43px;
+}
+.hot-news-item .news-item {
+    flex-direction: row;
+    align-items: center;
+    border: 0;
+    border-radius: 0;
+}
+.hot-news-item.news-list-item.news-item-small .news-item .card-body {
+    padding: 0;
+}
+.hot-news-item .news-item a {
+    padding-left: 0;
+}
+
+/* Tranding News Right Side / News Sidebar */
+.trending-news-list .trending-news-item:last-child .news-item {
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.news-right-side-wrap .section-heading {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 43px;
+}
+.trending-news-item .news-item {
+    border: 0;
+    border-bottom: 1px solid #EAEAEA;
+    border-radius: 0;
+}
+.news-list-item.news-item-small.trending-news-item .news-item .card-body {
+    padding: 0 0 25px;
+}
+.trending-news-item .news-item .card-body p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* News details css */
+.news-details-para.news-media-para {
+    display: flex;
+}
+.news-media-leftside {
+    width: 40%;
+    padding-right: 30px;
+}
+.news-media-rightside {
+    width: 60%;
+}
+
+/*--------------------------------------------
+    17. news Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    18. News Details Page CSS Start
+---------------------------------------------*/
+.news-details-content .news-item {
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.news-details-content .news-item .card-body {
+    padding: 0;
+}
+.news-details-content .news-item img {
+    border-radius: 12px;
+}
+.news-details-para {
+    margin-top: 41px;
+}
+.news-details-para h6 {
+    font-size: 18px;
+    margin-bottom: 19px;
+}
+.news-details-extra-info {
+    margin: 15px 0 25px;
+}
+.extra-info-left span {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--nutral-color);
+    margin-right: 15px;
+}
+.extra-info-left.extra-info-right span:last-child {
+    margin-right: 0;
+}
+.extra-info-right i.far.fa-heart {
+    color: var(--red-color);
+}
+.news-details-para p {
+    font-size: 14px;
+    color: #1B1A1B;
+    line-height: 22px;
+}
+/*--------------------------------------------
+    18. News Details Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    19. Contact Page CSS Start
+---------------------------------------------*/
+
+/* Contact page form css */
+.contact-form label {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+.contact-form .form-group {
+    margin-bottom: 25px;
+}
+.contact-form .theme-button1 {
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+}
+.contact-form .theme-button1 i {
+    margin-left: 10px;
+}
+
+/* Custom File Upload */
+.custom-file-upload .custom-file {
+    height: 95px;
+    border: 1px dashed var(--border-color);
+    border-radius: 4px;
+}
+.custom-file-upload label.custom-file-label {
+    height: 100%;
+    border: none;
+    color: var(--para-color);
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.custom-file-input:focus~.custom-file-label {
+    box-shadow: none;
+}
+.custom-file-upload .custom-file-label::after {
+    opacity: 0;
+}
+/*--------------------------------------------
+    19. Contact Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    20. Sign Up Page CSS Start
+---------------------------------------------*/
+
+/* Common Modal CSS Start */
+.modal.fade .modal-content {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.modal.fade.show .modal-content {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.modal-backdrop {
+    background-color: rgba(20, 20, 22, 0.9);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.modal-backdrop.show {
+    opacity: 1;
+}
+
+.modal.fade .modal-dialog {
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+.modal.show .modal-dialog {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+.modal-content {
+    border: 0;
+    padding: 30px 30px;
+}
+.modal-title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 500;
+}
+.modal-header {
+    border-bottom: 0;
+}
+
+.modal-header .close {
+    position: absolute;
+    top: 27px;
+    right: 29px;
+    font-size: 28px;
+    opacity: 1;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 2px 0;
+    margin: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.common-modal input {
+    margin: 0px 0;
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px var(--border-color);
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, var(--theme-color) 2%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, var(--theme-color) 2%);
+    background-position: -500px 0;
+    background-size: 500px 100%;
+    background-repeat: no-repeat;
+    color: var(--theme-color);
+    border-radius: 0;
+    font-size: 14px;
+}
+
+.common-modal  input:focus, .common-modal  input:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+}
+
+/* Animated Placeholder on Hover */
+.common-modal  input::-webkit-input-placeholder {
+    font-family: 'roboto', sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.common-modal  input:focus::-webkit-input-placeholder, .common-modal  input:valid::-webkit-input-placeholder {
+    color: var(--theme-color);
+    font-size: 11px;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    visibility: visible !important;
+}
+
+/* Common Modal CSS Start */
+
+/* Password Visibility CSS */
+.common-modal .pass-icon {
+    float: right;
+    margin-top: -28px;
+    position: relative;
+    z-index: 5;
+    font-size:13px;
+}
+/* Password Visibility CSS */
+
+.click-to-verify {
+    border: 1px solid var(--border-color);
+    width: 100%;
+    height: 45px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin: 10px 0 8px;
+}
+/* Social Login Part */
+.sign-up-social-part button {
+    width: 100%;
+    height: 45px;
+    margin-top: 12px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2E2C34!important;
+    font-weight: 500;
+}
+
+.sign-up-social-part button:hover {
+    border: 1px solid var(--theme-color);
+    background-color: #fff;
+    color: var(--theme-color)!important;
+}
+.sign-up-social-part button img {
+    margin-right: 10px;
+}
+.recaptcha-text {
+    font-size: 12px;
+    margin: 30px 0 0;
+}
+
+/* Terms Policy Box */
+.terms-policy-box input {
+    width: 30px;
+    margin-top: 4px;
+    margin-right: 10px;
+    height: 20px;
+}
+.terms-policy-box label {
+    margin: 1px 0 26px;
+}
+
+/* Sign Up button box css */
+.sign-up-button-part button {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    height: 45px;
+}
+.sign-up-button-part button:hover {
+    border-width: 1px;
+}
+
+/* Already Have Account Part */
+.already-have-account {
+    color: #2E2C34;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* Sign Up Or Box */
+.or-sign-up-box {
+    margin: 30px 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.or-sign-up-box span {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    min-width: 34px;
+    color: #2E2C34;
+    font-weight: 500;
+}
+
+/* Sign In Modal CSS Start */
+
+#signInModal .sign-up-button-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#signInModal .sign-up-button-part button {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    height: auto;
+    min-width: 183px;
+}
+#signInModal .sign-up-button-part button.forget-pass-btn {
+    min-width: auto;
+}
+/* Sign In Modal CSS End */
+
+/* Forget Password Modal Start */
+#forgetPasswordModal .already-have-account {
+    margin: 18px 0 30px;
+}
+.forget-pass-box {
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--theme-border-color);
+    padding-bottom: 30px;
+}
+.forget-pass-left i {
+    font-size: 26px;
+}
+.forget-pass-right {
+    width: 100%;
+}
+.forget-pass-box-title span {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+.forget-pass-box-title {
+    margin-bottom: 10px;
+}
+.forget-pass-right ul li {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+/* Forget Password Modal End */
+
+/*--------------------------------------------
+    20. Sign Up Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------------------------------
+    21. All Preview Inner Modal/ Place a bid/ purchase modals CSS Start
+---------------------------------------------------------------------*/
+.preview-inner-modal form {
+    margin-top: 15px;
+}
+.preview-inner-modal-btn button {
+    margin-top: 15px;
+}
+
+/* Change Price Modal start */
+.change-price-box .form-group {
+    position: relative;
+}
+.change-price-currency {
+    right: 0;
+    bottom: 11px;
+    font-weight: 500;
+}
+.change-price-box input {
+    font-size: 16px;
+    font-weight: 500;
+}
+/* Change Price Modal End */
+
+/* Transfer Token modal css start */
+.preview-inner-modal-info {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.receiver-address {
+    margin-bottom: 10px;
+}
+/* Transfer Token modal css end */
+
+/* burnTokenModal start */
+button.bg-red {
+    background-color: var(--red-color);
+    border-color: var(--red-color);
+}
+button.bg-red:hover {
+    border-color: #e75050;
+    background-color: #e75050;
+    color: #fff!important;
+}
+/* burnTokenModal end */
+
+/* Purchase inner Modals Start */
+
+/* Purchase 1 modal css */
+
+.checkout-content-box .table {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.checkout-content-box .table tbody tr:first-child {
+    border-bottom: 1px solid var(--theme-border-color);
+}
+.checkout-content-box .table td, .checkout-content-box .table th {
+    padding: .55rem 0 .55rem 0;
+    border-top: 0;
+}
+.checkout-content-box .table th {
+    text-align: right;
+    color: var(--heading-color);
+}
+.creator-not-verified {
+    background-color: rgba(239, 70, 111, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    color: var(--red-color);
+    margin-bottom: 15px;
+}
+.creator-not-verified-left {
+    margin-right: 10px;
+    border: 1px solid var(--red-color);
+    color: var(--red-color);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.creator-not-verified-right p {
+    color: var(--red-color);
+}
+
+/* Purchase 2 modal css */
+.purchasing-process-box {
+    margin: 23px 0 30px;
+}
+.steps__icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+    background: #E6E8EC;
+    border: 2px solid #E6E8EC;
+    border-radius: 50%;
+    transition: all .2s;
+}
+.steps__icon:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    background: #45B26B url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' fill='none' viewBox='0 0 14 10'%3E%3Cpath fill-rule='evenodd' d='M13.707.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L5 7.586 12.293.293a1 1 0 0 1 1.414 0z' fill='%23fcfcfd'/%3E%3C/svg%3E") no-repeat 50% 50%/14px auto;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.steps__icon .loader-circle {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: 2;
+    background: #FCFCFD;
+}
+.loader-circle {
+    font-size: 10px;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 5px solid #B1B5C3;
+    border-right: 5px solid #B1B5C3;
+    border-bottom: 5px solid #B1B5C3;
+    border-left: 5px solid var(--theme-color);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: loader-circle 1.1s infinite linear;
+    animation: loader-circle 1.1s infinite linear;
+}
+
+@-webkit-keyframes loader-circle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg); }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+
+@keyframes loader-circle {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg); }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); }
+}
+
+/* Purchase 3 modal css */
+.purchase-done-box {
+    width: 283px;
+    text-align: center;
+    margin: 0 auto;
+}
+.purchase-status-table {
+    border: 1px solid var(--theme-border-color);
+    margin-top: 20px;
+    width: 90%;
+    margin: 20px auto 0;
+    border-radius: 5px;
+}
+#purchase3Modal .checkout-content-box .table {
+    margin: 0;
+}
+#purchase3Modal .table tbody tr:first-child td, #purchase3Modal .table tbody tr:first-child th {
+    color: var(--para-color);
+    font-weight: 400;
+}
+#purchase3Modal .table td, #purchase3Modal .table th {
+    padding: .55rem .55rem;
+    word-break: break-all;
+}
+
+/* Purchase inner Modals End */
+
+/* Wallet not connected modal css */
+.wallet-not-connected-icon {
+    width: 146px;
+    height: 146px;
+    border-radius: 50%;
+    background-color: #E2F1DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--theme-color);
+    font-size: 37px;
+    margin: 0 auto;
+}
+#placeBidWalletNotConnectedModal .preview-inner-modal-info {
+    text-align: center;
+}
+
+/* Put on sale modals all css Start */
+
+/* put on sale 1 */
+.put-on-sale-modal-icon {
+    height: 49px;
+    width: 49px;
+    color: #fff;
+    background-color: #7457C2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.put-on-sale-modal-left {
+    margin-right: 15px;
+}
+.put-on-sale-modal-box.create-new-page-box {
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+#putOnSale2Modal .checkout-content-box .table tbody tr:first-child {
+    border-bottom: 0;
+}
+
+/* Put on sale modals all css End */
+
+/* Accept a bid all modals css start */
+#acceptBidModal .checkout-content-box .table tbody tr:first-child td {
+    font-weight: 500;
+    color: var(--heading-color);
+    font-size: 21px;
+}
+/* Accept a bid all modals css end */
+
+/*------------------------------------------------------------------
+    21. All Preview Inner Modal/ Place a bid/ purchase modals CSS End
+-------------------------------------------------------------------*/
+
+/*--------------------------------------------
+    22. Upload Page CSS Start
+---------------------------------------------*/
+.upload-box-item {
+    background-color: #fff;
+    text-align: center;
+    padding: 32px;
+    border: 1px solid #E6E8EC;
+    border-radius: 12px;
+    display: block;
+}
+.upload-box-item:hover {
+    filter: drop-shadow(0 8px 12px rgba(12, 5, 99, 0.08));
+    border-color: #fff;
+}
+.upload-box-inner {
+    padding: 58px 30px;
+    background-color: rgba(1, 28, 128, 0.07);
+    border-radius: 12px;
+}
+.upload-box-inner img {
+    height: 77px;
+}
+.upload-box-inner h3 {
+    margin: 30px 0 0px;
+}
+.upload-user-private-text {
+    font-size: 14px;
+    margin-top: 50px;
+}
+/*--------------------------------------------
+    22. Upload Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    23. Create New Page CSS Start
+---------------------------------------------*/
+.create-new-page-box {
+    margin-bottom: 30px;
+}
+.create-new-page-box p {
+    font-size: 14px;
+    color: var(--mid-gray);
+}
+.create-new-page-box label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 7px 0 9px;
+}
+.create-new-page-box .form-control {
+    border: 2px solid var(--border-color);
+}
+.create-new-page-box textarea.form-control {
+    height: 184px;
+}
+.create-new-page-box .custom-file-upload .custom-file {
+    height: 207px;
+    border: 2px dashed var(--border-color);
+    margin-top: 23px;
+}
+.create-new-page-box .custom-file-upload label.custom-file-label {
+    height: 96%;
+}
+.create-new-page-box .custom-file-upload label.custom-file-label i {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #AFAFAF;
+}
+.create-new-page-box.create-new-page-box-btn-wrap {
+    margin-top: 63px;
+}
+.create-new-page-box-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 3px;
+    font-family: 'DM Sans', sans-serif;
+}
+.create-new-page-box.create-new-page-box-btn-wrap button {
+    margin-right: 10px;
+}
+.save-or-not-msg {
+    color: var(--nutral-color4);
+    font-weight: 600;
+}
+.show-full-preview {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.preview-img {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Main Item Preview Pop Up Modal CSS Start */
+@media (min-width: 576px) {
+    #mainItemPreviewModal .modal-dialog {
+        max-width: 1150px;
+        margin: 1.75rem auto;
+    }
+}
+#mainItemPreviewModal .modal-content {
+    border: 0;
+    padding: 30px 30px;
+}
+#mainItemPreviewModal .modal-header {
+    border-bottom: 1px solid #EAEAEA;
+    margin: 0px 0 30px;
+    padding: 0 0 22px 0!important;
+}
+#mainItemPreviewModal .modal-title {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Other Page Main Item CSS Start */
+.main-item-views-love {
+    border-top: 1px solid #E6E8EC;
+    margin: 30px 0 23px;
+    padding-top: 23px;
+}
+.main-item-views-part span {
+    padding-right: 24px;
+    color: var(--nutral-color);
+}
+.main-item-img img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+.main-item-img-part .main-item-img {
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main-item-leftside-box {
+    border: 1px solid #E6E8EC;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.main-item-content-part .main-item-leftside-box:last-child {
+    margin-bottom: 0;
+}
+.main-item-leftside-box .highest-bid-box {
+    border: 0;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+.main-item-leftside-box .owner-creator-box .owner-box img {
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+}
+.main-item-leftside-box .current-bid-box {
+    border-bottom: 1px solid rgba(151, 151, 151, 0.15);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.main-item-leftside-box .owner-creator-box {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.owner-box p {
+    font-size: 13px;
+}
+.owner-box h6 {
+    font-size: 15px;
+    margin: 10px 0 2px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+}
+.main-item-leftside-box .main-item-btn-box .theme-button1, .main-item-leftside-box .main-item-btn-box .theme-button2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+/* Other Page Main Item CSS End */
+
+/* Main Item Preview Pop Up Modal CSS End */
+
+
+/* Follow Steps Modal CSS Start */
+@media (min-width: 576px) {
+
+    #followStepsModal .modal-dialog, #placeBidModal .modal-dialog,
+    #placeBid2Modal .modal-dialog, #placeBidWalletNotConnectedModal .modal-dialog,
+    #acceptBidModal .modal-dialog {
+        max-width: 450px;
+    }
+
+    #putOnSaleModal .modal-dialog, #putOnSale2Modal .modal-dialog,#putOnSale3Modal .modal-dialog {
+        max-width: 560px;
+    }
+
+}
+/* Follow Steps Modal CSS Start */
+@media (max-width: 575.98px) {
+
+    #followStepsModal .modal-dialog, #placeBidModal .modal-dialog,
+    #placeBid2Modal .modal-dialog, #placeBidWalletNotConnectedModal .modal-dialog,
+    #acceptBidModal .modal-dialog {
+        max-width: 450px;
+        margin: 30px auto;
+    }
+
+    #putOnSaleModal .modal-dialog, #putOnSale2Modal .modal-dialog,#putOnSale3Modal .modal-dialog {
+        max-width: 450px;
+        margin: 30px auto;
+    }
+
+}
+@media (max-width: 480px) {
+
+    #followStepsModal .modal-dialog, #placeBidModal .modal-dialog,
+    #placeBid2Modal .modal-dialog, #placeBidWalletNotConnectedModal .modal-dialog,
+    #acceptBidModal .modal-dialog {
+        max-width: 310px;
+        margin: 30px auto;
+    }
+
+    #putOnSaleModal .modal-dialog, #putOnSale2Modal .modal-dialog,#putOnSale3Modal .modal-dialog {
+        max-width: 310px;
+        margin: 30px auto;
+    }
+
+}
+#followStepsModal .modal-content {
+    padding: 37px 50px 50px;
+}
+#followStepsModal .modal-title, #placeBid2Modal .modal-title, #putOnSale3Modal .modal-title,
+#acceptBid2Modal .modal-title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.step-done-btn .theme-button1 {
+    background-color: var(--nutral-color4);
+    border-color: var(--nutral-color4);
+}
+.step-done-btn  .follow-step-content-left {
+    color: #fff;
+    background-color: var(--theme-color);
+}
+.step-disable-btn .theme-button1 {
+    opacity: .5;
+}
+.follow-step-content-left {
+    height: 43px;
+    width: 43px;
+    font-size: 16px;
+    background-color: var(--nutral-color2);
+    color: var(--nutral-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.follow-step-content-right h6 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+}
+.follow-step-content-right p {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--nutral-color);
+    font-family: 'DM Sans', sans-serif;
+}
+.follow-step-button-box .theme-button1, .follow-step-button-box .theme-button2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.follow-step-modal-box {
+    margin-bottom: 40px;
+}
+/* Follow Steps Modal CSS End */
+
+/*--------------------------------------------
+    23. Create New Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    24. Connect Wallet Page CSS Start
+---------------------------------------------*/
+.connect-wallet-right-title {
+    margin-bottom: 20px;
+}
+.wallet-list {
+    padding-right: 94px;
+}
+
+/* Connect Wallet1 Page CSS */
+.connect-wallet-name {
+    padding: 18px 30px 18px 25px;
+    border: 1px solid var(--theme-border-color);
+    display: flex;
+    border-radius: 95px;
+    color: var(--heading-color);
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-poppins);
+    margin-bottom: 30px;
+}
+
+.connect-wallet-name.active {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+    color: #fff;
+}
+
+.connect-wallet-name i {
+    opacity: 0;
+    position: relative;
+    left: -7px;
+    color: #fff;
+}
+.connect-wallet-name.active i,
+.connect-wallet-name:hover i {
+    opacity: 1;
+    left: 0;
+    color: var(--theme-color);
+}
+.connect-wallet-name.active i {
+    color: #fff;
+}
+
+.connect-wallet-name span {
+    background-color: #9757D7;
+    padding: 13px;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wallet-list li:nth-child(2) .connect-wallet-name span {
+    background-color: #3772FF;
+}
+.wallet-list li:nth-child(3) .connect-wallet-name span {
+    background-color: #45B26B;
+}
+.wallet-list li:nth-child(4) .connect-wallet-name span {
+    background-color: #EF466F;
+}
+
+/* Connect wallet rightside css */
+.scan-to-connect {
+    background-color: #F6F6F6;
+    padding: 68px;
+    border-radius: 12px;
+    text-align: center;
+}
+.scan-to-connect .qr-code-img-wrap {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 23px;
+    display: block;
+}
+.connect-wallet-right-btns {
+    margin-top: 30px;
+}
+.connect-wallet-right-btns .common-btn {
+    padding: 10px 22px;
+    margin-right: 15px;
+}
+
+/* Connect Wallet 2 Page CSS */
+.connect-wallet2-page .scan-to-connect, .connect-wallet2-page .scan-to-connect .qr-code-img-wrap {
+    padding: 0;
+}
+.connect-wallet-right-terms-wrap p {
+    margin-bottom: 20px;
+}
+.connect-wallet2-page .scan-to-connect {
+    text-align: left;
+}
+
+/*--------------------------------------------
+    24. Connect Wallet Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    25. How It Works / FAQ / faq Page CSS Start
+---------------------------------------------*/
+
+/* Tab Sidebar List Start */
+
+.tab-nav-list.nav-tabs.faq-tab-nav-list {
+    padding: 23px;
+    background-color: #fff;
+    filter: drop-shadow(0 8px 12px #E2E9F2);
+    border-radius: 12px;
+}
+.tab-nav-list.nav-tabs.faq-tab-nav-list .nav-link {
+    color: var(--nutral-color);
+    padding: 16px 22px;
+    border-radius: 12px;
+    font-size: 16px;
+    border: transparent;
+}
+.tab-nav-list.nav-tabs.faq-tab-nav-list .nav-link i {
+    margin-right: 10px;
+}
+.faq-tab-nav-list.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--theme-color)!important;
+    background-color: #ECF6EA;
+}
+/* Tab Sidebar List Start */
+
+/* Accordion CSS Start */
+.faq-list .card {
+    background: transparent;
+    border-bottom: 1px solid var(--theme-border-color);
+    padding: 32px 0;
+    border: 0;
+    border-top: 1px solid var(--theme-border-color);
+}
+.faq-list .card:last-child {
+    border-bottom: none;
+}
+.faq-list .card .card-header {
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    line-height: 1;
+    border-bottom: none;
+}
+.faq-list .card .card-header button {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-family: var(--font-poppins);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--heading-color);
+    text-decoration: none;
+    border-radius: 0;
+}
+.faq-list .card .card-header button.collapsed::before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.faq-list .card .card-header button::before {
+    position: absolute;
+    content: "\f105";
+    font-family: "Font Awesome 5 free";
+    right: 0;
+    top: -4px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    color: var(--mid-gray);
+    height: 35px;
+    width: 35px;
+    border: 1px solid var(--nutral-color2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    font-weight: 600;
+    font-size: 15px;
+}
+.faq-list .card .card-body {
+    padding: 0;
+}
+.faq-list .card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+/* Accordion CSS End */
+
+/*--------------------------------------------
+    25. How It Works / FAQ / faq Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    26. Search / Discover Page CSS Start
+---------------------------------------------*/
+.section-banner-search form {
+    width: 351px;
+    margin: 30px auto 0;
+}
+.section-banner-search form .form-control {
+    background-color: transparent;
+}
+/* Search Sidebar CSS Start */
+.search-sidebar-wrap {
+    filter: drop-shadow(0 8px 12px #E2E9F2);
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+/* search-sidebar-box start */
+.search-sidebar-box {
+    margin-bottom: 30px;
+}
+.search-sidebar-box-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    font-family: var(--font-dms);
+    text-transform: capitalize!important;
+    font-weight: 500;
+}
+.search-sidebar-box button {
+    color: #A1A9B7;
+}
+.search-sidebar-box button span {
+    height: 18px;
+    width: 18px;
+    border: 1px solid #A1A9B7;
+    border-radius: 50%;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    text-align: center;
+    padding-left: 1px;
+}
+
+label.checkbox-wrap {
+    margin-bottom: 15px;
+}
+.search-sidebar-box label.checkbox-wrap:last-child {
+    margin-bottom: 0;
+}
+
+/* search-sidebar-box end */
+
+/* Search Sidebar CSS End */
+
+/* niceSelect css */
+.nice-select {
+    float: inherit;
+    line-height: 35px;
+}
+.nice-select .list {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 120px;
+}
+.nice-select.form-control {
+    color: var(--heading-color);
+}
+.range-value-box {
+    display: flex;
+    justify-content: space-between;
+}
+.ui-slider-horizontal {
+    height: 4px;
+    border: 0!important;
+    background: #ecefef;
+    border-radius: 3px;
+}
+.ui-slider-horizontal {
+    margin-bottom: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+.ui-widget-header {
+    background: var(--theme-color);
+}
+.range-value-wrap, .price-range-field {
+    color: var(--para-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+.price-range-field {
+    border: 0;
+    background: transparent;
+    margin-left: 5px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -11px;
+    /* margin-left: -.6em; */
+    filter: drop-shadow(0 8px 12px rgba(0, 82, 204, 0.16));
+    background-color: var(--theme-color)!important;
+    border-radius: 50%;
+    border: 8px solid #fff!important;
+}
+.ui-slider .ui-slider-handle {
+    width: 24px;
+    height: 24px;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/*--------------------------------------------
+    26. Search / Discover Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    27. Other User Profile Page CSS Start
+---------------------------------------------*/
+.search-sidebar-wrap.user-profile-sidebar-wrap {
+    padding: 22px;
+    text-align: center;
+}
+.explore-small-box p.on-sell > span {
+    color: #00C271;
+}
+.user-profile-img {
+    width: 122px;
+    height: 122px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+.user-profile-img img {
+    height: 122px;
+    width: 100%;
+    border-radius: 50%;
+}
+.user-profile-sidebar-about {
+    margin: 22px 0 25px;
+}
+.user-profile-url {
+    margin-bottom: 33px;
+}
+.user-profile-sidebar-follow-box {
+    margin-bottom: 34px;
+}
+.user-profile-sidebar-name h5 {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+.user-profile-sidebar-name h6 {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    color: var(--para-color);
+    font-family: var(--font-dms);
+}
+.user-profile-url a {
+    line-height: 16px;
+    font-weight: 500;
+    color: #23262F;
+}
+.user-profile-sidebar-follow-box .user-follow-btn.theme-button1 {
+    padding: 8px 16px;
+}
+.user-profile-sidebar-social-box ul li a {
+    color: var(--nutral-color4);
+}
+.user-profile-sidebar-social-box ul li a:hover {
+    color: var(--theme-color);
+}
+.membership-status {
+    border-top: 1px solid #F8F8F8;
+    padding-top: 35px;
+    margin-top: 35px;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--nutral-color4);
+}
+/*--------------------------------------------
+    27. Other User Profile Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    28. User Profile Page CSS Start
+---------------------------------------------*/
+
+/* User Profile Banner CSS Start*/
+.page-banner-area.user-profile-banner-area .page-banner-content {
+    height: 330px;
+}
+.user-profile-banner-area .page-banner-title, .user-profile-banner-area .page-banner-para {
+    color: #fff;
+}
+
+.user-profile-banner-btns {
+    margin-top: 15px;
+    display: flex;
+}
+.user-profile-banner-btn.theme-button2 {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px 23px;
+    color: #D2D2D2!important;
+    margin: 0 5px;
+}
+.user-profile-banner-btn.theme-button2:hover {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color)!important;
+    color: #fff!important;
+}
+.user-profile-banner-btn.theme-button2 i {
+    font-size: 18px;
+    margin-left: 15px;
+}
+.user-profile-banner-btns .custom-file-upload label.custom-file-label {
+    height: auto;
+    border: 2px solid #fff;
+}
+.user-profile-banner-btns .custom-file {
+    display: inline-block;
+    width: 212px;
+    height: auto!important;
+    border: none!important;
+    border-radius: 25px;
+}
+/* User Profile Banner CSS End */
+
+/* User profile Followers Item CSS */
+.followers-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+.following-tab-wrap .col-12:not(:last-child) .followers-item {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--theme-border-color);
+}
+.followers-user {
+    display: flex;
+    align-items: center;
+    width: 385px;
+    flex: 0 0 385px;
+    padding-right: 24px;
+}
+.followers-button.theme-button2 {
+    padding: 7.5px 19px;
+    background-color: #F3F3F3;
+}
+.followers-button.theme-button2:hover {
+    background-color: var(--theme-color);
+}
+.followers-name {
+    margin-bottom: 7px;
+}
+.followers-specialist {
+    margin: 5px 0 15px;
+}
+.followers-wrap {
+    width: calc(100% - 385px);
+    flex: 0 0 calc(100% - 385px);
+}
+.followers-gallery {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+.followers-preview {
+    flex-shrink: 0;
+    width: 136px;
+    margin: 0 0 0 13px;
+}
+.followers-preview img {
+    width: 100%;
+    border-radius: 12px;
+}
+.load-more-btn.theme-button2 {
+    padding: 10px 32px;
+}
+/*--------------------------------------------
+    28. User Profile Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    29. Edit Profile Page CSS Start
+---------------------------------------------*/
+.edit-profile-page-area form {
+    padding: 0 194px;
+}
+.user-profile-photo-part {
+    margin-bottom: 70px;
+}
+.user-profile-photo-part .profile-photo {
+    margin: 0 auto;
+}
+.user-profile-photo-part .profile-photo, .user-profile-photo-part .profile-photo img {
+    height: 122px;
+    width: 122px;
+    border-radius: 50%;
+}
+.user-profile-photo-part .theme-button2 {
+    padding: 3px 2px;
+}
+.user-profile-photo-part .custom-file-upload label.custom-file-label {
+    height: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 95px;
+    background-color: transparent;
+    color: var(--heading-color);
+    font-weight: 700;
+}
+.user-profile-photo-part .custom-file-upload.theme-button2:hover label.custom-file-label {
+    color: #fff;
+}
+.user-profile-photo-part .custom-file-upload.theme-button2:hover {
+    background-color: var(--theme-color);
+}
+.user-profile-photo-part .custom-file {
+    width: 159px;
+    height: auto!important;
+    border: none!important;
+    border-radius: 95px;
+}
+.user-profile-edit-name {
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.user-profile-code {
+    margin: 10px 0 16px;
+}
+
+/* User Profile Edit Information CSS */
+.user-information-part .form-group {
+    position: relative;
+}
+.user-information-part .create-new-page-box textarea.form-control {
+    height: 100px;
+}
+.add-more-social-accounts {
+    margin-top: 30px;
+}
+.social-url-verify-btn {
+    background-color: #F0F0F0;
+    padding: 6px 12px;
+    border-radius: 35px;
+    right: 10px;
+    top: 43px;
+}
+
+/* User Profile Edit Notification CSS */
+
+.user-information-part .create-new-page-box:last-child, .notification-part .create-new-page-box:last-child {
+    margin-bottom: 0;
+}
+.edit-user-small-title {
+    margin-bottom: 20px;
+}
+.notification-part .edit-user-small-title {
+    padding-bottom: 30px;
+}
+.notification-part .create-new-page-box-inner {
+    margin-bottom: 30px;
+}
+.notification-part-btns button {
+    padding: 10px 29px;
+    margin-right: 10px;
+}
+
+/*--------------------------------------------
+    29. Edit Profile Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    30. All Artist Page CSS Start
+---------------------------------------------*/
+.list-of-artist-area .section-heading, .all-artist-page-top-artists-area .section-heading {
+    margin-bottom: 45px;
+}
+
+/* Top Artist Section Area css start */
+
+/* All Artist Slider Item */
+.all-artist-page-slider-item {
+    border: 1px solid var(--theme-border-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.all-artist-item-cover-photo {
+    height: 105px;
+}
+.all-artist-item-cover-photo img {
+    height: 100%;
+    width: auto!important;
+}
+.all-artist-page-slider-item:hover .all-artist-img-inner-img img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.all-artist-page-slider-item:hover .all-artist-page-slider-item-content h5 {
+    color: var(--theme-color);
+}
+.all-artist-img-inner-img {
+    height: 120px;
+    width: 120px;
+    margin: -76px auto 0;
+    border-radius: 50%;
+}
+.all-artist-img-inner-img-wrap {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.all-artist-img-inner-img span {
+    background-color: #018DF0;
+    color: #fff;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 13px;
+    bottom: 2px;
+    border: 3px solid #fff;
+}
+.all-artist-page-slider-item-content {
+    padding: 20px 30px 30px;
+}
+.all-artist-page-slider-item-content h5 {
+    font-size: 18px;
+    margin: 0 0 12px;
+    line-height: 32px;
+}
+.all-artist-sales-box h6 img {
+    height: 13px;
+    width: auto!important;
+    margin-right: 5px;
+}
+.all-artist-page-slider-item-content .theme-button1 {
+    justify-content: center;
+    margin-top: 30px;
+}
+/* All Artist Slider Item */
+
+.all-artist-page-items .owl-nav button {
+    top: 37%;
+}
+
+/* Top Artist Section Area css end */
+
+/*--------------------------------------------
+    30. All Artist Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    31. Activities/ Notification Page CSS Start
+---------------------------------------------*/
+.activities-sidebar-select-btn {
+    padding: 10px 12px;
+    font-size: 13px;
+}
+
+/* Activities page notificatio Item css */
+.activities-page-area .notification-item {
+    padding: 30px!important;
+}
+.activities-page-area .unread:after {
+    right: 30px;
+}
+.activities-page-area .notification-img {
+    height: 95px;
+    width: 95px;
+}
+.activities-page-area .notification-img img {
+    height: 95px;
+    width: 100%;
+    border-radius: 50%;
+}
+.activities-page-area .notification-right-content h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.activities-page-area .notification-right-content p {
+    font-size: 15px;
+    font-weight: 400!important;
+}
+.activities-page-area .notification-right-content .notification-publish-date {
+    font-size: 12px;
+}
+/*--------------------------------------------
+    31. Activities/ Notification Page CSS End
+---------------------------------------------*/
+
+/*--------------------------------------------
+    28. User Dashboard Page CSS Start
+---------------------------------------------*/
+.user-dashboard-page-area .search-sidebar-wrap {
+    filter: drop-shadow(0 8px 12px #f7f7f7);
+}
+.user-dashboard-sidebar-menu ul li a {
+    padding: 10px 0;
+    display: block;
+    color: var(--nutral-color);
+    padding: 16px 22px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+.user-dashboard-sidebar-menu ul li a.active {
+    color: var(--theme-color)!important;
+    background-color: #ECF6EA;
+}
+.user-dashboard-sidebar-menu ul li a:hover {
+    color: var(--theme-color);
+}
+.user-dashboard-sidebar-menu ul li:last-child a {
+    border-bottom: 0;
+}
+.user-dashboard-sidebar-menu ul li a span {
+    margin-right: 15px;
+}
+/*--------------------------------------------
+    28. User Dashboard Page CSS End
+---------------------------------------------*/
